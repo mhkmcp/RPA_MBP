@@ -1,10 +1,10 @@
-<!doctype html>
 {% load staticfiles %}
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sign In | Neat</title>
+    <title>Sign In | FernTech | AIW</title>
     <meta name="description" content="Neat">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" href="{% staic 'apple-touch-icon.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 
     <!-- Stylesheet -->
@@ -28,18 +28,19 @@
           </span>
 
           <h4 class="u-mb-medium">Welcome Back :)</h4>
-          <form>
+          <form method="post">
+              {% csrf_token %}
             <div class="c-field">
-              <label class="c-field__label">Email Address</label>
-              <input class="c-input u-mb-small" type="email" placeholder="e.g. adam@sandler.com" required>
+              <label class="c-field__label" for="id_username">Username</label>
+              <input class="c-input u-mb-small" type="text" id="id_username" placeholder="username" name="username" required>
             </div>
 
             <div class="c-field">
-              <label class="c-field__label">Password</label>
-              <input class="c-input u-mb-small" type="password" placeholder="Numbers, Pharagraphs Only" required>
+              <label class="c-field__label" for="id_password">Password</label>
+              <input class="c-input u-mb-small" id="id_password" type="password" placeholder="password" name="password" required>
             </div>
 
-            <button class="c-btn c-btn--fullwidth c-btn--info">Login</button>
+            <button class="c-btn c-btn--fullwidth c-btn--info" type="submit">Login</button>
           </form>
         </div>
       </div>

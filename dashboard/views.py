@@ -15,5 +15,5 @@ def render_landing_page(request):
 
         })
     else:
-        return redirect('/')
+        return redirect('/login/')
 

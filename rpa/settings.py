@@ -139,3 +139,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+LOGIN_REDIRECT_URL = '/dashboard/bankasia/'
+LOGOUT_REDIRECT_URL = '/login/'
