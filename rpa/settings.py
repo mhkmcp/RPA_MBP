@@ -142,3 +142,6 @@ REST_FRAMEWORK = {
 
 LOGIN_REDIRECT_URL = '/dashboard/bankasia/'
 LOGOUT_REDIRECT_URL = '/login/'
+
+
+CELERY_BROKER_URL = 'amqp://localhost'

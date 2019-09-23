@@ -1,2 +1,81 @@
 {% extends 'base/base.html' %}
 {% load staticfiles %}
+
+{% block page-script %}
+    <script>
+        {% comment %}
+
+                    $('#device-ping').click(
+                    function () {
+                        let tempurl = window.location.protocol + "//" + window.location.host + "/" + "api/command/"+{{ atm.id }}+"/ping/";
+                        var tempData = function () {
+                            var tmp = null;
+                            $.ajax({
+                                'async': false,
+                                'type': "GET",
+                                'global': false,
+                                'dataType': 'json',
+                                'contentType': 'application/json; charset=utf-8',
+                                'url': tempurl,
+                                'success': function (data) {
+                                    tmp = data;
+                                }
+                            });
+                            return tmp;
+                        }();
+
+                    }
+                );
+
+
+            {% endcomment %}
+
+
+$('#workerBotStartButton').click(
+    function () {
+
+        let tempurl = window.location.protocol + "//" + window.location.host + "/bots/worker/" ;
+                        var tempData = function () {
+                            var tmp = null;
+                            $.ajax({
+                                'async': false,
+                                'type': "GET",
+                                'global': false,
+                                'dataType': 'json',
+                                'contentType': 'application/json; charset=utf-8',
+                                'url': tempurl,
+                                'success': function (data) {
+                                    tmp = data;
+                                }
+                            });
+                            return tmp;
+                        }();
+
+    });
+$('#nidBotStartButton').click(
+    function () {
+
+        let tempurl = window.location.protocol + "//" + window.location.host + "/bots/nid/" ;
+                        var tempData = function () {
+                            var tmp = null;
+                            $.ajax({
+                                'async': false,
+                                'type': "GET",
+                                'global': false,
+                                'dataType': 'json',
+                                'contentType': 'application/json; charset=utf-8',
+                                'url': tempurl,
+                                'success': function (data) {
+                                    tmp = data;
+                                }
+                            });
+                            return tmp;
+                        }();
+
+    });
+
+
+
+    </script>
+
+{% endblock %}

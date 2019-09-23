@@ -24,6 +24,7 @@ urlpatterns = [
                   path('admin/', admin.site.urls),
                   url(r'^api-auth/', include('rest_framework.urls')),
                   url(r'^dashboard/', include('dashboard.urls')),
+                  url(r'^bots/', include('bots.urls')),
                   url(r'^login/', auth_views.LoginView.as_view(), name='login'),
                   url(r'^logout/', auth_views.LogoutView.as_view(), name='logout'),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
