@@ -2,6 +2,8 @@
 from rest_framework import status, permissions
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
+from bank_asia_scripts.Parallel_process import *
+from bank_asia_scripts.Creating_info import *
 
 
 @api_view(['GET'])
@@ -9,6 +11,7 @@ from rest_framework.response import Response
 def worker_bot(request):
     if request.method == 'GET':
         print("executing worker bot")
+        run_this = execute_the_whole_thing()
 
     return Response({"status": True}, status=status.HTTP_200_OK)
 
@@ -18,5 +21,9 @@ def worker_bot(request):
 def nid_bot(request):
     if request.method == 'GET':
         print("executing nid bot")
+
+        event = Event()
+
+        dispatch = event.dispatch(event)
 
     return Response({"status": True}, status=status.HTTP_200_OK)
