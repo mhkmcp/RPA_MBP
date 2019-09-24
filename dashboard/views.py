@@ -17,3 +17,9 @@ def render_landing_page(request):
     else:
         return redirect('/login/')
 
+
+def homepage_redirection(request):
+    if request.user.is_authenticated:
+        return redirect('dashboard_landing_page')
+    else:
+        return redirect('/login')
