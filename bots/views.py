@@ -4,14 +4,14 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from bank_asia_scripts.Parallel_process import *
 from bank_asia_scripts.Creating_info import *
+from bots.tasks import add, mul
 
 
 @api_view(['GET'])
 @permission_classes((permissions.AllowAny,))
 def worker_bot(request):
     if request.method == 'GET':
-        print("executing worker bot")
-        run_this = execute_the_whole_thing()
+        add.delay()
 
     return Response({"status": True}, status=status.HTTP_200_OK)
 
@@ -22,8 +22,7 @@ def nid_bot(request):
     if request.method == 'GET':
         print("executing nid bot")
 
-        event = Event()
-
+        event = mul.delay()
         dispatch = event.dispatch(event)
 
     return Response({"status": True}, status=status.HTTP_200_OK)

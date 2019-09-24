@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+    'django_celery_results',
+
     'bots',
     'logs',
     'dashboard',
@@ -143,5 +145,6 @@ REST_FRAMEWORK = {
 LOGIN_REDIRECT_URL = '/dashboard/bankasia/'
 LOGOUT_REDIRECT_URL = '/login/'
 
-
 CELERY_BROKER_URL = 'amqp://localhost'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_CACHE_BACKEND = 'django-cache'
