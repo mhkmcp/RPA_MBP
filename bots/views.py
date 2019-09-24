@@ -21,8 +21,7 @@ def worker_bot(request):
 def nid_bot(request):
     if request.method == 'GET':
         print("executing nid bot")
+        mul.delay()
 
-        event = mul.delay()
-        dispatch = event.dispatch(event)
 
     return Response({"status": True}, status=status.HTTP_200_OK)

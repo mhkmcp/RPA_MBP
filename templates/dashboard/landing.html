@@ -2,6 +2,8 @@
 {% load staticfiles %}
 
 {% block page-script %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"  type="text/javascript"></script>
+
     <script>
         {% comment %}
 
@@ -31,48 +33,101 @@
             {% endcomment %}
 
 
-$('#workerBotStartButton').click(
-    function () {
+        $('#workerBotStartButton').click(
+            function () {
 
-        let tempurl = window.location.protocol + "//" + window.location.host + "/bots/worker/" ;
-                        var tempData = function () {
-                            var tmp = null;
-                            $.ajax({
-                                'async': false,
-                                'type': "GET",
-                                'global': false,
-                                'dataType': 'json',
-                                'contentType': 'application/json; charset=utf-8',
-                                'url': tempurl,
-                                'success': function (data) {
-                                    tmp = data;
-                                }
-                            });
-                            return tmp;
-                        }();
+                let tempurl = window.location.protocol + "//" + window.location.host + "/bots/worker/";
+                var tempData = function () {
+                    var tmp = null;
+                    $.ajax({
+                        'async': false,
+                        'type': "GET",
+                        'global': false,
+                        'dataType': 'json',
+                        'contentType': 'application/json; charset=utf-8',
+                        'url': tempurl,
+                        'success': function (data) {
+                            tmp = data;
+                        }
+                    });
+                    return tmp;
+                }();
 
-    });
-$('#nidBotStartButton').click(
-    function () {
+            });
+        $('#nidBotStartButton').click(
+            function () {
 
-        let tempurl = window.location.protocol + "//" + window.location.host + "/bots/nid/" ;
-                        var tempData = function () {
-                            var tmp = null;
-                            $.ajax({
-                                'async': false,
-                                'type': "GET",
-                                'global': false,
-                                'dataType': 'json',
-                                'contentType': 'application/json; charset=utf-8',
-                                'url': tempurl,
-                                'success': function (data) {
-                                    tmp = data;
-                                }
-                            });
-                            return tmp;
-                        }();
+                let tempurl = window.location.protocol + "//" + window.location.host + "/bots/nid/";
+                var tempData = function () {
+                    var tmp = null;
+                    $.ajax({
+                        'async': false,
+                        'type': "GET",
+                        'global': false,
+                        'dataType': 'json',
+                        'contentType': 'application/json; charset=utf-8',
+                        'url': tempurl,
+                        'success': function (data) {
+                            tmp = data;
+                        }
+                    });
+                    return tmp;
+                }();
 
-    });
+            });
+
+
+        // Create a client instance
+
+
+    </script>
+
+    <script>
+        function startConnection() {
+            console.log("trying to do stuff")
+            client = new Paho.MQTT.Client('techcomengine.com', Number(1883), '', '');
+
+        // set callback handlers
+        client.onConnectionLost = onConnectionLost;
+        client.onMessageArrived = onMessageArrived;
+
+        // connect the client
+        client.connect({onSuccess: onConnect});
+
+
+        // called when the client connects
+        function onConnect() {
+            // Once a connection has been made, make a subscription and send a message.
+            console.log("onConnect");
+            client.subscribe("aiw");
+            message = new Paho.MQTT.Message("Hello");
+            message.destinationName = "aiw";
+            client.send(message);
+        }
+
+        // called when the client loses its connection
+        function onConnectionLost(responseObject) {
+            if (responseObject.errorCode !== 0) {
+                console.log("onConnectionLost:" + responseObject.errorMessage);
+            }
+        }
+
+        // called when a message arrives
+        function onMessageArrived(message) {
+            console.log("onMessageArrived:" + message.payloadString);
+        }
+
+        }
+
+        startConnection();
+
+        $('#triggerMqtt').click(
+            function() {
+                console.log("clicked")
+                startConnection();
+
+            }
+        )
 
 
 
