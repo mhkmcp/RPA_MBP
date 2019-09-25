@@ -18,8 +18,3 @@ def mul():
 
     dispatch = event.dispatch(event)
     return True
-
-
-@shared_task
-def xsum(numbers):
-    return sum(numbers)

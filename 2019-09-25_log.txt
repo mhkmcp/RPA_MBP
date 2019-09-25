@@ -1,0 +1,33 @@
+2019-09-25 12:12:04.611165-going to the nid website
+2019-09-25 12:12:05.826565-logging in to nid website
+2019-09-25 12:12:05.916898-doing nid check for account no 1083441036686
+2019-09-25 12:12:17.380737-done nid check and saved nid image of account no 1083441036686
+2019-09-25 12:12:17.493754-doing nid check for account no 1083441036681
+2019-09-25 12:12:36.896955-done nid check and saved nid image of account no 1083441036681
+2019-09-25 12:12:36.976882-doing nid check for account no 1083441036703
+2019-09-25 12:12:41.481063-done nid check and saved nid image of account no 1083441036703
+2019-09-25 12:12:41.566912-doing nid check for account no 1083448112646
+2019-09-25 12:12:48.392106-done nid check and saved nid image of account no 1083448112646
+2019-09-25 12:12:48.490991-doing nid check for account no 1083493011265
+2019-09-25 12:13:02.770304-done nid check and saved nid image of account no 1083493011265
+2019-09-25 12:13:02.867112-doing nid check for account no 1083493011262
+2019-09-25 12:13:11.609649-done nid check and saved nid image of account no 1083493011262
+2019-09-25 12:13:11.700322-doing nid check for account no 1083494001542
+2019-09-25 12:13:14.594190-done nid check and saved nid image of account no 1083494001542
+2019-09-25 12:13:14.691153-doing nid check for account no 1083494001539
+2019-09-25 12:13:16.613305-done nid check and saved nid image of account no 1083494001539
+2019-09-25 12:13:16.703673-doing nid check for account no 1083493011260
+2019-09-25 12:13:17.174612-tried nid chck for account no 1083493011260 and found error
+2019-09-25 12:13:17.278021-doing nid check for account no 1083419041164
+2019-09-25 12:13:22.795455-done nid check and saved nid image of account no 1083419041164
+2019-09-25 12:13:22.892379-doing nid check for account no 1083410035909
+2019-09-25 12:13:31.098339-done nid check and saved nid image of account no 1083410035909
+2019-09-25 12:13:31.196274-doing nid check for account no 1083467006866
+2019-09-25 12:13:38.894709-done nid check and saved nid image of account no 1083467006866
+2019-09-25 12:13:38.990846-doing nid check for account no 1083461017923
+2019-09-25 12:13:44.966724-done nid check and saved nid image of account no 1083461017923
+2019-09-25 12:13:45.070688-done nid check saved it into a csv
+2019-09-25 12:13:51.162799-done comparing address and name from NID and erp and saved to a it to a CSV
+2019-09-25 12:13:51.269704-making a final CSV of all the checks
+2019-09-25 12:13:51.347879-started final verification
+2019-09-25 12:14:17.761479-Done final verification
