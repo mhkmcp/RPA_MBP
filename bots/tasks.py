@@ -7,13 +7,13 @@ from bank_asia_scripts.Parallel_process import *
 
 
 @shared_task
-def add():
+def worker_bot_process():
     call = execute_the_whole_thing()
     return True
 
 
 @shared_task
-def mul():
+def nid_bot_process():
     event = Event()
 
     dispatch = event.dispatch(event)

@@ -1,11 +1,13 @@
 import paho.mqtt.client as mqtt
+from django_celery_results.models import TaskResult
 
 
 def broadcast_log(message):
     CHANNEL = "aiw"
-    HOST = "103.108.140.185"
+    # HOST = "mqtt.eclipse.org"
+    # HOST = "103.108.140.185"
 
-    # HOST = "techcomengine.com"
+    HOST = "techcomengine.com"
 
     def on_connect(client, userdata, flags, rc):
         print("Connected with result code " + str(rc))
@@ -29,3 +31,11 @@ def broadcast_log(message):
     client.publish(CHANNEL, payload=payload, qos=1, retain=False)
 
     return True
+
+def task_results_query():
+    result = TaskResult.objects.all()
+    for r in result:
+        print(r.task_name)
+        print(r.status)
+
+    print(result)
