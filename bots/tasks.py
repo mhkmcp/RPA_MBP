@@ -2,8 +2,8 @@
 from __future__ import absolute_import, unicode_literals
 from celery import shared_task
 
-from bank_asia_scripts.Creating_info import *
-from bank_asia_scripts.Parallel_process import *
+from bank_asia_bots.Creating_info import *
+from bank_asia_bots.Parallel_process import *
 
 
 @shared_task
