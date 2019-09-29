@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://10.11.1.202/ords/wwv_flow.show -->
+<html lang="en" style="" class=" js flexboxlegacy no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Dialog</title>
+<link rel="stylesheet" href="./Core.min.css" type="text/css">
+<link rel="stylesheet" href="./Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./jquery-ui-apex.min.css" type="text/css">
+
+<link rel="stylesheet" href="./font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Core.min(1).css" type="text/css">
+
+<link rel="stylesheet" href="./Vita.min.css" type="text/css">
+
+<link rel="shortcut icon" href="http://10.11.1.202/i/favicon.ico">
+<link rel="icon" sizes="16x16" href="http://10.11.1.202/i/favicon-16x16.png">
+<link rel="icon" sizes="32x32" href="http://10.11.1.202/i/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://10.11.1.202/i/favicon-180x180.png">
+
+<script>
+var apex_img_dir = "/i/", htmldb_Img_Dir = apex_img_dir;
+</script>
+<script src="./desktop_all.min.js.download"></script>
+<script src="./wwv_flow.js_messages"></script>
+<script src="./legacy_18.min.js.download"></script>
+<script src="./jquery-migrate-3.0.0.min.js.download"></script>
+
+<script src="./widget.apexTabs.min.js.download"></script>
+<script src="./widget.stickyWidget.min.js.download"></script>
+<script src="./widget.stickyTableHeader.min.js.download"></script>
+<script src="./modernizr-custom.min.js.download"></script>
+<script src="./theme42.min.js.download"></script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head><body onload="first_field()" class="t-Page t-Page--popupLOV">
+<script type="text/javascript">
+function first_field(){$x("SEARCH").focus();};
+function passBack(pReturn, pDisplay){
+  apex.navigation.dialog.close(true, function( pDialog, pOptions ){
+    pOptions.closeFunction();
+    pOptions.triggeringElement$.trigger( "_setpopuplovreturnvalue", [{ r: pReturn, d: pDisplay }]);
+  });
+};
+function performAction(pAction, pFirstRow){
+  $s("x01", pFirstRow);
+  $s("x03", pAction);
+  apex.submit();
+};
+function submitEnter(pEvent){
+  var lThis = $x("SEARCH"),
+      lKeyCode;
+  if (window.event) {
+    lKeyCode = window.event.keyCode;
+  } else if(pEvent){
+    lKeyCode = pEvent.which;
+  } else {
+    return true;
+  }
+  if (lKeyCode === 13){
+    performAction("SEARCH", 1);
+    return false;
+  } else {
+    return true;
+  }
+};
+</script>
+<form action="http://10.11.1.202/ords/wwv_flow.show" method="POST" target="" enctype="" novalidate="" name="wwv_flow" class="js-popupLOV-form"><input type="hidden" name="p_flow_id" value="100"><input type="hidden" name="p_flow_step_id" value="90"><input type="hidden" name="p_instance" value="6834038127154"><input type="hidden" name="p_request" value="PLUGIN=4yZGWO1W0y1NAmW0iK75hHUZA8I7wJ2GtP06MFNx1OTKKkEOZeM_mmPw11lx8fx-"><input type="hidden" name="p_json" value="{&quot;pageItems&quot;:{&quot;itemsToSubmit&quot;:[{&quot;n&quot;:&quot;P90_BRANCH_NAME&quot;,&quot;v&quot;:&quot;000&quot;}],&quot;protected&quot;:&quot;x-y7ct12d4bpRE0I8SDAqA&quot;,&quot;rowVersion&quot;:&quot;&quot;},&quot;salt&quot;:&quot;194642791250251848259636600188758149209&quot;}"><input type="hidden" name="x01" value="" id="x01"><input type="hidden" name="x03" value="" id="x03"><input type="hidden" name="x04" value="" id="x04"><div class="t-PopupLOV-actions t-Form--large"><input type="text" name="x02" size="20" maxlength="100" value="48276700061" class="t-Form-field t-Form-searchField" id="SEARCH" onkeypress="return submitEnter(event)" title="Search Term"><input type="button" name="" value="Search" class="t-Button t-Button--hot t-Button--padLeft" onclick="performAction(&#39;SEARCH&#39;, 1);"></div><div class="t-PopupLOV-links"><br><a href="javascript:passBack(&#39;&#39;,&#39;&#39;);">%</a><br><a href="javascript:passBack(&#39;48276700061&#39;,&#39;48276700061\u0020\u002D\u0020MST.MORTOJA\u0020BEGUM&#39;);">41233500310 - SWAPAN GHOSH</a><br><div class="t-PopupLOV-pagination">Row(s) 1 - 1</div><br></div></form></body></html>
