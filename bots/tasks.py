@@ -8,13 +8,19 @@ from bank_asia_bots.Parallel_process import *
 
 @shared_task
 def worker_bot_process():
-    call = execute_the_whole_thing()
+    # call = execute_the_whole_thing()
+
+    print("inside worker bot")
+
     return True
 
 
 @shared_task
 def nid_bot_process():
-    event = Event()
+    # event = Event()
 
-    dispatch = event.dispatch(event)
+    # dispatch = event.dispatch(event)
+
+    print("inside nid bot")
     return True
+

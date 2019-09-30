@@ -11,9 +11,11 @@ from bots.tasks import worker_bot_process, nid_bot_process
 @permission_classes((permissions.AllowAny,))
 def worker_bot(request):
     if request.method == 'GET':
-        worker_bot_process.delay()
+        task = worker_bot_process.delay()
 
-    return Response({"status": True}, status=status.HTTP_200_OK)
+        print(task.id)
+
+        return Response({"task_id": task.id}, status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])
@@ -21,9 +23,9 @@ def worker_bot(request):
 def nid_bot(request):
     if request.method == 'GET':
         print("executing nid bot")
-        nid_bot_process.delay()
+        task = nid_bot_process.delay()
 
-    return Response({"status": True}, status=status.HTTP_200_OK)
+        return Response({"task_id": task.id}, status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])
@@ -34,10 +36,33 @@ def bot_status(request):
         result = TaskResult.objects.all()
         process_count = result.count()
         success = result.filter(status='SUCCESS').count()
-        percentage = (success / process_count)*100
+        percentage = (success / process_count) * 100
 
         status_dict['process_count'] = process_count
         status_dict['success'] = success
         status_dict['percentage'] = int(percentage)
 
-    return Response(status_dict, status=status.HTTP_200_OK)
+        return Response(status_dict, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+@permission_classes((permissions.AllowAny,))
+def process_queue_status(request):
+    if request.method == 'GET':
+        status_dict = dict()
+
+        data = request.data
+
+        try:
+            task = TaskResult.objects.get(task_id=data['id'])
+            print(task.task_name)
+
+            if task.status == 'SUCCESS':
+                status_dict['status'] = True
+            else:
+                status_dict['status'] = False
+
+        except TaskResult.DoesNotExist:
+            status_dict['status'] = False
+
+        return Response(status_dict, status=status.HTTP_200_OK)
