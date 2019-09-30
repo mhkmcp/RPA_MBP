@@ -4,27 +4,27 @@
 {% block page-content %}
 
     <div class="row">
-                <div class="col-md-6">
-                    <div class="c-state-card c-state-card--info">
-                        <h4 class="c-state-card__title">Processes completed</h4>
-                        <span class="c-state-card__number" id="process-completed-number">45</span>
-                        <p class="c-state-card__status">
-                            <i class="feather icon-settings"></i> Total no. of processes completed by the AIW
-                        </p>
-                    </div>
-                </div>
+        <div class="col-md-6">
+            <div class="c-state-card c-state-card--info">
+                <h4 class="c-state-card__title">Processes completed</h4>
+                <span class="c-state-card__number" id="process-completed-number">45</span>
+                <p class="c-state-card__status">
+                    <i class="feather icon-settings"></i> Total no. of processes completed by the AIW
+                </p>
+            </div>
+        </div>
 
-                <div class="col-md-6">
-                    <div class="c-state-card c-state-card--success">
-                        <h4 class="c-state-card__title">Success Rate</h4>
-                        <span class="c-state-card__number" id="success-percentage-number">70%</span>
-                        <p class="c-state-card__status">
-                            <i class="feather icon-percent"></i> Percentage of processes completed successfully
-                        </p>
-                    </div>
-                </div>
+        <div class="col-md-6">
+            <div class="c-state-card c-state-card--success">
+                <h4 class="c-state-card__title">Success Rate</h4>
+                <span class="c-state-card__number" id="success-percentage-number">70%</span>
+                <p class="c-state-card__status">
+                    <i class="feather icon-percent"></i> Percentage of processes completed successfully
+                </p>
+            </div>
+        </div>
 
-                {% comment %}<div class="col-md-4">
+        {% comment %}<div class="col-md-4">
                     <div class="c-state-card c-state-card--fancy">
                         <h4 class="c-state-card__title">Duration</h4>
                         <span class="c-state-card__number">450 H</span>
@@ -34,83 +34,83 @@
                     </div>
                 </div>{% endcomment %}
 
-            </div>
+    </div>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="c-card" data-mh="dashboard3-cards">
-                        <h4>Control Panel</h4>
-                        <p class="u-mb-medium">Start/stop AIW processes.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="c-card" data-mh="dashboard3-cards">
+                <h4>Control Panel</h4>
+                <p class="u-mb-medium">Start/stop AIW processes.</p>
 
-                        <div class="o-line u-pb-small u-mb-small u-border-bottom">
-                            <div class="o-media">
-                                <div class="o-media__body">
-                                    <h6>Worker bot</h6>
-                                    <p style="color: #ee4343" id="worker_bot-runbutton-msg">Paused</p>
-                                </div>
-                            </div>
-                            <a  class="c-btn c-btn--info has-icon" id="workerBotStartButton">
-                                Start <i class="feather icon-play"></i>
-                            </a>
-                            <!-- <a href="#" class="c-btn c-btn--info has-icon" id="workerBotStopButton">
-                              Stop <i class="feather icon-pause"></i>
-                            </a> -->
-
+                <div class="o-line u-pb-small u-mb-small u-border-bottom">
+                    <div class="o-media">
+                        <div class="o-media__body">
+                            <h6>Worker bot</h6>
+                            <p style="color: #ee4343" id="worker_bot-runbutton-msg">Paused</p>
                         </div>
+                    </div>
+                    <a class="c-btn c-btn--info has-icon" id="workerBotStartButton">
+                        Start <i class="feather icon-play"></i>
+                    </a>
+                    <!-- <a href="#" class="c-btn c-btn--info has-icon" id="workerBotStopButton">
+                      Stop <i class="feather icon-pause"></i>
+                    </a> -->
 
-                        <div class="o-line">
-                            <div class="o-media">
-                                <div class="o-media__body">
-                                    <h6>NID bot</h6>
-                                    <p style="color: #ee4343" id="nid_bot-runbutton-msg">Paused</p>
-{#                                    <p style="color: #28c76f" id="nid_bot-runbutton-msg">Running</p>#}
-                                </div>
-                            </div>
+                </div>
 
-              <a  class="c-btn c-btn--info has-icon" id="nidBotStartButton">
-                              Start <i class="feather icon-play"></i>
-                            </a>
-{% comment %}
+                <div class="o-line">
+                    <div class="o-media">
+                        <div class="o-media__body">
+                            <h6>NID bot</h6>
+                            <p style="color: #ee4343" id="nid_bot-runbutton-msg">Paused</p>
+                            {#                                    <p style="color: #28c76f" id="nid_bot-runbutton-msg">Running</p>#}
+                        </div>
+                    </div>
+
+                    <a class="c-btn c-btn--info has-icon" id="nidBotStartButton">
+                        Start <i class="feather icon-play"></i>
+                    </a>
+                    {% comment %}
                             <a href="#" class="c-btn c-btn--info has-icon" id="nidBotStopButton">
                                 Stop <i class="feather icon-pause"></i>
                             </a>
                             {% endcomment %}
-                        </div>
-
-                    </div>
                 </div>
 
-                <div class="col-md-8">
-                    <div class="c-card" data-mh="dashboard3-cards">
-                        <h4 id="triggerMqtt">AIW Bot Logs</h4>
-                        <p class="u-mb-medium">Logs generated by AIW, sorted by last process first.</p>
-                        <div class="c-feed" id="server-feed">
-
-                        </div><!-- // .c-feed -->
-                    </div>
-                </div>
             </div>
-            <div class="row">
+        </div>
 
-                <div class="col-md-12">
-                    <div class="c-card u-ph-zero u-pb-zero">
+        <div class="col-md-8">
+            <div class="c-card" data-mh="dashboard3-cards">
+                <h4 id="triggerMqtt">AIW Bot Logs</h4>
+                <p class="u-mb-medium">Logs generated by AIW, sorted by last process first.</p>
+                <div class="c-feed" id="server-feed">
 
-                        <div class="u-ph-medium">
-                            <h4>Performance</h4>
-{#                            <p>Activity from 1 Jan 2018 to 30 July 2018</p>#}
+                </div><!-- // .c-feed -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
 
-{#                            <span class="u-h1">$23,420</span>#}
-                        </div>
+        <div class="col-md-12">
+            <div class="c-card u-ph-zero u-pb-zero">
 
-                        <div class="u-p-medium">
-                            <div class="c-chart">
-                                 <div id="interactive" style="height: 300px;"></div>
-                            </div>
-                        </div>
+                <div class="u-ph-medium">
+                    <h4>Performance</h4>
+                    {#                            <p>Activity from 1 Jan 2018 to 30 July 2018</p>#}
 
+                    {#                            <span class="u-h1">$23,420</span>#}
+                </div>
+
+                <div class="u-p-medium">
+                    <div class="c-chart">
+                        <div id="interactive" style="height: 300px;"></div>
                     </div>
                 </div>
+
             </div>
+        </div>
+    </div>
 
 
 {% endblock %}
@@ -122,18 +122,18 @@
             type="text/javascript"></script>
 
 
-    <script src= "{% static 'js/Flot/jquery.flot.js' %}"></script>
+    <script src="{% static 'js/Flot/jquery.flot.js' %}"></script>
     <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
     <script src="{% static 'js/Flot/jquery.flot.resize.js' %}"></script>
     <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-    <script src="{% static 'js/Flot/jquery.flot.pie.js'%}"></script>
+    <script src="{% static 'js/Flot/jquery.flot.pie.js' %}"></script>
     <!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-    <script src="{% static 'js/Flot/jquery.flot.categories.js'%}"></script>
+    <script src="{% static 'js/Flot/jquery.flot.categories.js' %}"></script>
 
 
     <script>
 
-            function liveChartFunction (switchkey) {
+        function liveChartFunction(switchkey) {
             var data = [], totalPoints = 100;
 
             function getRandomData() {
@@ -359,6 +359,7 @@
              */
 
         }
+
         {% comment %}
 
                     $('#device-ping').click(
@@ -513,9 +514,8 @@
 
             }
         }
+
         startConnection();
-
-
 
 
         /*
