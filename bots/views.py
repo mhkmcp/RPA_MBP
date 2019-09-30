@@ -2,6 +2,7 @@
 from django_celery_results.models import TaskResult
 from rest_framework import status, permissions
 from rest_framework.decorators import api_view, permission_classes
+from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 
 from bots.tasks import worker_bot_process, nid_bot_process
@@ -45,16 +46,48 @@ def bot_status(request):
         return Response(status_dict, status=status.HTTP_200_OK)
 
 
-@api_view(['GET'])
+@api_view(['GET',])
 @permission_classes((permissions.AllowAny,))
-def process_queue_status(request):
+def process_queue_status(request, t_id):
+    print(repr(request))
     if request.method == 'GET':
+        print("post hit")
         status_dict = dict()
 
-        data = request.data
+        data = t_id
+        # data = request.query_params.get('t_data', None)
+        # data = request.data
+        print(t_id)
 
         try:
-            task = TaskResult.objects.get(task_id=data['id'])
+            task = TaskResult.objects.get(task_id=data)
+            print(task.task_name)
+
+            if task.status == 'SUCCESS':
+                status_dict['status'] = True
+            else:
+                status_dict['status'] = False
+
+        except TaskResult.DoesNotExist:
+            status_dict['status'] = False
+
+        return Response(status_dict, status=status.HTTP_200_OK)
+
+@api_view(['GET',])
+@permission_classes((permissions.AllowAny,))
+def process_queue_status_worker(request, t_id):
+    print(repr(request))
+    if request.method == 'GET':
+        print("post hit")
+        status_dict = dict()
+
+        data = t_id
+        # data = request.query_params.get('t_data', None)
+        # data = request.data
+        print(t_id)
+
+        try:
+            task = TaskResult.objects.get(task_id=data)
             print(task.task_name)
 
             if task.status == 'SUCCESS':

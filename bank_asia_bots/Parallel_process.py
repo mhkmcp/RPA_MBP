@@ -48,7 +48,8 @@ class Event(LoggingEventHandler):
             print(dirname)
             print(os.path.join(dirname, 'chromedriver'))
             # browser = webdriver.Chrome(os.path.join(dirname, 'chromedriver.exe'))
-            browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
+            # browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
+            browser = webdriver.Chrome('/usr/bin/chromedriver')
             df = pd.read_csv(inputFile)  # or pd.read_excel(filename) for xls file
             browser.get(r'http://nid.techcomengine.com/')
             gettinglogs("going to the nid website")

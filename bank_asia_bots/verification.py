@@ -19,7 +19,8 @@ def verify():
     df_final_status = pd.read_csv(os.path.join(dirname, r'final_info/final_status.csv'))
 
     # browser = webdriver.Chrome(os.path.join(dirname, 'chromedriver.exe'))
-    browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
+    # browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
+    browser = webdriver.Chrome('/usr/bin/chromedriver')
 
     browser.maximize_window()
 
