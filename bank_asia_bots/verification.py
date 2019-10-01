@@ -1,16 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
-
-
-from selenium import webdriver
-import time
-import pandas as pd
 import os
+import time
+from datetime import datetime
+
+# In[5]:
+import django
+import pandas as pd
+from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
+
+from bots.factory import broadcast_log, email_results
+
+dirname = os.path.dirname(__file__)
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "rpa.settings")
+django.setup()
 
 
 def verify():
@@ -19,8 +26,8 @@ def verify():
     df_final_status = pd.read_csv(os.path.join(dirname, r'final_info/final_status.csv'))
 
     # browser = webdriver.Chrome(os.path.join(dirname, 'chromedriver.exe'))
-    # browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
-    browser = webdriver.Chrome('/usr/bin/chromedriver')
+    browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
+    # browser = webdriver.Chrome('/usr/bin/chromedriver')
 
     browser.maximize_window()
 
@@ -125,8 +132,15 @@ def verify():
     time.sleep(2)
     browser.quit()
 
+    now = datetime.now()
+
+    broadcast_log(
+        "<div class=\"c-feed__item c-feed__item--success\"><p><strong>{0}</strong> - {1}</p></div>".format(
+            now.strftime("%m/%d/%Y %H:%M:%S"), "All the process are completed"))
+    broadcast_log(
+        "<div class=\"c-feed__item c-feed__item--success\"><p><strong>{0}</strong> - {1}</p></div>".format(
+            now.strftime("%m/%d/%Y %H:%M:%S"), "Sending Email"))
+
+    email_results()
+
 # In[6]:
-
-
-
-

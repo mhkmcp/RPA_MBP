@@ -29,8 +29,8 @@ def execute_the_whole_thing():
 
     urls = []
     # browser = webdriver.Chrome(os.path.join(dirname,r"chromedriver"))
-    # browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
-    browser = webdriver.Chrome('/usr/bin/chromedriver')
+    browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
+    # browser = webdriver.Chrome('/usr/bin/chromedriver')
     browser.maximize_window()
     browser.get(r'http://localhost/Login.html')
     log_in_user = r'//*[@id="P101_USERNAME"]'

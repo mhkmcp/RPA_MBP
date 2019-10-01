@@ -1,8 +1,8 @@
 # Create your views here.
+
 from django_celery_results.models import TaskResult
 from rest_framework import status, permissions
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 
 from bots.tasks import worker_bot_process, nid_bot_process
@@ -46,7 +46,7 @@ def bot_status(request):
         return Response(status_dict, status=status.HTTP_200_OK)
 
 
-@api_view(['GET',])
+@api_view(['GET', ])
 @permission_classes((permissions.AllowAny,))
 def process_queue_status(request, t_id):
     print(repr(request))
@@ -73,7 +73,8 @@ def process_queue_status(request, t_id):
 
         return Response(status_dict, status=status.HTTP_200_OK)
 
-@api_view(['GET',])
+
+@api_view(['GET', ])
 @permission_classes((permissions.AllowAny,))
 def process_queue_status_worker(request, t_id):
     print(repr(request))
@@ -99,3 +100,5 @@ def process_queue_status_worker(request, t_id):
             status_dict['status'] = False
 
         return Response(status_dict, status=status.HTTP_200_OK)
+
+
