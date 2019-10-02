@@ -21,9 +21,18 @@ def render_landing_page(request):
 def render_settings_page(request):
     page_title = 'Dashboard | FernTech AIW'
     navbar_title = 'Settings'
-    email_config = BotConfig.objects.get(config_validity=True, config_class="email_results")
-    nid_config = BotConfigNid.objects.get(config_validity=True)
-    cbs_config = BotConfigCbs.objects.get(config_validity=True)
+    try:
+        email_config = BotConfig.objects.get(config_validity=True, config_class="email_results")
+    except BotConfig.DoesNotExist:
+        email_config = None
+    try:
+        nid_config = BotConfigNid.objects.get(config_validity=True)
+    except BotConfigNid.DoesNotExist:
+        nid_config = None
+    try:
+        cbs_config = BotConfigCbs.objects.get(config_validity=True)
+    except BotConfigCbs.DoesNotExist:
+        cbs_config = None
 
     if request.user.is_authenticated:
         return render(request, 'dashboard/settings.html', {
