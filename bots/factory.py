@@ -57,7 +57,7 @@ def email_results():
 
     try:
         email_setting = BotConfig.objects.get(config_class='email_results', config_validity=True)
-        toaddr = email_setting.setting_string
+        toaddr = email_setting.config_settings
     except (BotConfig.MultipleObjectsReturned, BotConfig.DoesNotExist) as e:
         toaddr = 'rkabir.rashed@gmail.com'
         print(e)
