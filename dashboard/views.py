@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
 
-
 # Create your views here.
-from bots.models import BotConfig
+from bots.models import BotConfig, BotConfigNid, BotConfigCbs
 
 
 def render_landing_page(request):
@@ -23,13 +22,16 @@ def render_settings_page(request):
     page_title = 'Dashboard | FernTech AIW'
     navbar_title = 'Settings'
     email_config = BotConfig.objects.get(config_validity=True, config_class="email_results")
-
+    nid_config = BotConfigNid.objects.get(config_validity=True)
+    cbs_config = BotConfigCbs.objects.get(config_validity=True)
 
     if request.user.is_authenticated:
         return render(request, 'dashboard/settings.html', {
             'page_title': page_title,
             'navbar_title': navbar_title,
-
+            'email_config': email_config,
+            'nid_config': nid_config,
+            'cbs_config': cbs_config,
         })
     else:
         return redirect('/login/')

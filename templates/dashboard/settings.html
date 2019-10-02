@@ -33,16 +33,16 @@
                                     {% csrf_token %}
                                 <div class="c-field u-mb-medium">
                                     <label class="c-field__label" for="nid_url">Portal URL</label>
-                                    <input class="c-input" type="text" id="nid_url" name="nid_url">
+                                    <input class="c-input" type="text" id="nid_url" name="nid_url" placeholder="{{ nid_config.nid_url }}" required>
                                 </div>
 
                                 <div class="c-field u-mb-medium">
                                     <label class="c-field__label" for="nid_username">Username</label>
-                                    <input class="c-input" type="text" id="nid_username" name="nid_username">
+                                    <input class="c-input" type="text" id="nid_username" name="nid_username" placeholder="{{ nid_config.nid_username }}" required>
                                 </div>
                                 <div class="c-field u-mb-medium">
                                     <label class="c-field__label" for="nid_password">Password</label>
-                                    <input class="c-input" type="password" id="nid_password" name="nid_password">
+                                    <input class="c-input" type="password" id="nid_password" name="nid_password"  placeholder="{{ nid_config.nid_password }}" required>
                                 </div>
                                 </form>
                             </div>
@@ -63,16 +63,16 @@
                                     {% csrf_token %}
                                 <div class="c-field u-mb-medium">
                                     <label class="c-field__label" for="cbs_url">Portal URL</label>
-                                    <input class="c-input" type="text" id="cbs_url" name="cbs_url">
+                                    <input class="c-input" type="text" id="cbs_url" name="cbs_url" placeholder="{{ cbs_config.cbs_url }}" required>
                                 </div>
 
                                 <div class="c-field u-mb-medium">
                                     <label class="c-field__label" for="cbs_username">Username</label>
-                                    <input class="c-input" type="text" id="cbs_username" name="cbs_username">
+                                    <input class="c-input" type="text" id="cbs_username" name="cbs_username" placeholder="{{ cbs_config.cbs_username }}" required>
                                 </div>
                                 <div class="c-field u-mb-medium">
                                     <label class="c-field__label" for="cbs_password">Password</label>
-                                    <input class="c-input" type="password" id="cbs_password" name="cbs_password">
+                                    <input class="c-input" type="password" id="cbs_password" name="cbs_password" placeholder="{{ cbs_config.cbs_password }}" required>
                                 </div>
                                 </form>
                             </div>
@@ -93,7 +93,7 @@
                                     <form method="post" action="/bots/settings/report-email/" id="emailSettings">
                                         {% csrf_token %}
                                         <label class="c-field__label" for="email_config">Reporting Email</label>
-                                        <input class="c-input" type="email" id="email_config" name="email_config">
+                                        <input class="c-input" type="email" id="email_config" name="email_config"  placeholder="{{ email_config.config_settings }}" required>
                                     </form>
                                 </div>
                             </div>
