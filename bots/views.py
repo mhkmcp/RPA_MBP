@@ -109,15 +109,22 @@ def email_settings_update(request):
         form = EmailConfigForm(request.POST)
 
         if form.is_valid():
-            older_email_config = BotConfig.objects.get(config_validity=True, config_class="email_results")
-            older_email_config.config_validity = False
-            older_email_config.save()
+            try:
+                older_email_config = BotConfig.objects.get(config_validity=True, config_class="email_results")
+                older_email_config.config_validity = False
+                older_email_config.save()
 
-            new_email_config = BotConfig()
-            new_email_config.config_settings = form.cleaned_data['email_config']
-            new_email_config.config_class = "email_results"
+                new_email_config = BotConfig()
+                new_email_config.config_settings = form.cleaned_data['email_config']
+                new_email_config.config_class = "email_results"
 
-            new_email_config.save()
+                new_email_config.save()
+            except BotConfig.DoesNotExist:
+                new_email_config = BotConfig()
+                new_email_config.config_settings = form.cleaned_data['email_config']
+                new_email_config.config_class = "email_results"
+
+                new_email_config.save()
 
         return HttpResponseRedirect('/dashboard/settings/')
 
