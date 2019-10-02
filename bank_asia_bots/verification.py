@@ -24,6 +24,7 @@ def verify():
     dirname = os.path.dirname(__file__)
 
     df_final_status = pd.read_csv(os.path.join(dirname, r'final_info/final_status.csv'))
+    file = os.path.join(dirname, r'final_info/final_status.csv')
 
     # browser = webdriver.Chrome(os.path.join(dirname, 'chromedriver.exe'))
     browser = webdriver.Chrome('/usr/lib64/chromium/chromedriver')
@@ -129,6 +130,8 @@ def verify():
     print(total_remarks)
     submit = browser.find_element_by_xpath(r'//*[@id="B35815888295108623"]/span')
     # submit.click()
+    df_final_status["final_remarks"] = total_remarks
+    df_final_status.to_csv(file)
     time.sleep(2)
     browser.quit()
 
