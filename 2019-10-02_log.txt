@@ -1,231 +1,231 @@
-2019-10-02 11:18:21.637541-logged in to erp system
-2019-10-02 11:18:22.062364-verification list page empty or no urls found
-2019-10-02 11:18:22.202092-taking the urls of all entries from verification list page
-2019-10-02 11:18:22.323807-verification list page empty or no urls found
-2019-10-02 11:18:22.454656-taking the urls of all entries from verification list page
-2019-10-02 11:18:22.546318-taking the urls of all entries from verification list page
-2019-10-02 11:18:22.680738-taking the urls of all entries from verification list page
-2019-10-02 11:18:22.784554-taking the urls of all entries from verification list page
-2019-10-02 11:18:22.921356-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.063455-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.186989-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.328792-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.469940-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.610558-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.744545-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.880459-taking the urls of all entries from verification list page
-2019-10-02 11:18:23.988692-taking the urls of all entries from verification list page
-2019-10-02 11:18:24.130453-taking the urls of all entries from verification list page
-2019-10-02 11:18:24.271621-taking the urls of all entries from verification list page
-2019-10-02 11:18:24.403732-taking the urls of all entries from verification list page
-2019-10-02 11:18:24.546533-taking the urls of all entries from verification list page
-2019-10-02 11:18:24.692008-taking the urls of all entries from verification list page
-2019-10-02 11:18:24.818807-taking the urls of all entries from verification list page
-2019-10-02 11:18:24.920429-verification list page empty or no urls found
-2019-10-02 11:18:25.057693-verification list page empty or no urls found
-2019-10-02 11:18:25.216590-traversing the links collected from 
-2019-10-02 11:18:25.575482-going tohttp://localhost/1.html
-2019-10-02 11:18:26.523326-collected all text data from account number 1083441036686 verification detail page
-2019-10-02 11:18:26.798080-getting required images from account no -1083441036686 
-2019-10-02 11:18:26.879716-concatinating images for  call of account no 1083441036686 
-2019-10-02 11:18:26.967032-concatinating images for call of account no 1083441036686 
-2019-10-02 11:18:27.106978-saving joined image of of account no 1083441036686 and saving the path to an array 
-2019-10-02 11:18:27.563701-going tohttp://localhost/2.html
-2019-10-02 11:18:28.443203-collected all text data from account number 1083441036681 verification detail page
-2019-10-02 11:18:28.753163-getting required images from account no -1083441036681 
-2019-10-02 11:18:28.830270-concatinating images for  call of account no 1083441036681 
-2019-10-02 11:18:28.922852-concatinating images for call of account no 1083441036681 
-2019-10-02 11:18:29.050741-saving joined image of of account no 1083441036681 and saving the path to an array 
-2019-10-02 11:18:29.521753-going tohttp://localhost/3.html
-2019-10-02 11:18:30.374020-collected all text data from account number 1083441036703 verification detail page
-2019-10-02 11:18:30.695253-getting required images from account no -1083441036703 
-2019-10-02 11:18:30.777719-concatinating images for  call of account no 1083441036703 
-2019-10-02 11:18:30.864992-concatinating images for call of account no 1083441036703 
-2019-10-02 11:18:30.957781-saving joined image of of account no 1083441036703 and saving the path to an array 
-2019-10-02 11:18:31.407263-going tohttp://localhost/4.html
-2019-10-02 11:18:32.166809-collected all text data from account number 1083448112646 verification detail page
-2019-10-02 11:18:32.482197-getting required images from account no -1083448112646 
-2019-10-02 11:18:32.563531-concatinating images for  call of account no 1083448112646 
-2019-10-02 11:18:32.652510-concatinating images for call of account no 1083448112646 
-2019-10-02 11:18:32.770834-saving joined image of of account no 1083448112646 and saving the path to an array 
-2019-10-02 11:18:33.288201-going tohttp://localhost/5.html
-2019-10-02 11:18:35.058398-collected all text data from account number 1083493011265 verification detail page
-2019-10-02 11:18:35.349810-getting required images from account no -1083493011265 
-2019-10-02 11:18:36.435633-concatinating images for  call of account no 1083493011265 
-2019-10-02 11:18:36.523888-concatinating images for call of account no 1083493011265 
-2019-10-02 11:18:36.664806-saving joined image of of account no 1083493011265 and saving the path to an array 
-2019-10-02 11:18:37.180708-going tohttp://localhost/6.html
-2019-10-02 11:18:38.149261-collected all text data from account number 1083493011262 verification detail page
-2019-10-02 11:18:38.399155-getting required images from account no -1083493011262 
-2019-10-02 11:18:38.475220-concatinating images for  call of account no 1083493011262 
-2019-10-02 11:18:38.572645-concatinating images for call of account no 1083493011262 
-2019-10-02 11:18:38.768199-saving joined image of of account no 1083493011262 and saving the path to an array 
-2019-10-02 11:18:39.202604-going tohttp://localhost/10.html
-2019-10-02 11:18:40.069279-collected all text data from account number 1083494001542 verification detail page
-2019-10-02 11:18:40.387257-getting required images from account no -1083494001542 
-2019-10-02 11:18:40.468642-concatinating images for  call of account no 1083494001542 
-2019-10-02 11:18:40.551035-concatinating images for call of account no 1083494001542 
-2019-10-02 11:18:40.656302-saving joined image of of account no 1083494001542 and saving the path to an array 
-2019-10-02 11:18:41.158710-going tohttp://localhost/11.html
-2019-10-02 11:18:41.961674-collected all text data from account number 1083494001539 verification detail page
-2019-10-02 11:18:42.179236-getting required images from account no -1083494001539 
-2019-10-02 11:18:42.261473-concatinating images for  call of account no 1083494001539 
-2019-10-02 11:18:42.344797-concatinating images for call of account no 1083494001539 
-2019-10-02 11:18:42.446228-saving joined image of of account no 1083494001539 and saving the path to an array 
-2019-10-02 11:18:42.874764-going tohttp://localhost/13.html
-2019-10-02 11:18:43.703974-collected all text data from account number 1083493011260 verification detail page
-2019-10-02 11:18:44.074769-getting required images from account no -1083493011260 
-2019-10-02 11:18:44.151832-concatinating images for  call of account no 1083493011260 
-2019-10-02 11:18:44.246165-concatinating images for call of account no 1083493011260 
-2019-10-02 11:18:44.406235-saving joined image of of account no 1083493011260 and saving the path to an array 
-2019-10-02 11:18:44.873854-going tohttp://localhost/15.html
-2019-10-02 11:18:45.764706-collected all text data from account number 1083419041164 verification detail page
-2019-10-02 11:18:45.969806-getting required images from account no -1083419041164 
-2019-10-02 11:18:46.052554-concatinating images for  call of account no 1083419041164 
-2019-10-02 11:18:46.144960-concatinating images for call of account no 1083419041164 
-2019-10-02 11:18:46.269040-saving joined image of of account no 1083419041164 and saving the path to an array 
-2019-10-02 11:18:47.737144-going tohttp://localhost/16.html
-2019-10-02 11:18:48.555440-collected all text data from account number 1083410035909 verification detail page
-2019-10-02 11:18:48.871599-getting required images from account no -1083410035909 
-2019-10-02 11:18:48.947858-concatinating images for  call of account no 1083410035909 
-2019-10-02 11:18:49.032948-concatinating images for call of account no 1083410035909 
-2019-10-02 11:18:49.160974-saving joined image of of account no 1083410035909 and saving the path to an array 
-2019-10-02 11:18:49.635865-going tohttp://localhost/17.html
-2019-10-02 11:18:50.497722-collected all text data from account number 1083467006866 verification detail page
-2019-10-02 11:18:50.775446-getting required images from account no -1083467006866 
-2019-10-02 11:18:50.853814-concatinating images for  call of account no 1083467006866 
-2019-10-02 11:18:50.949274-concatinating images for call of account no 1083467006866 
-2019-10-02 11:18:51.056176-saving joined image of of account no 1083467006866 and saving the path to an array 
-2019-10-02 11:18:51.527533-going tohttp://localhost/18.html
-2019-10-02 11:18:52.344923-collected all text data from account number 1083461017923 verification detail page
-2019-10-02 11:18:52.657653-getting required images from account no -1083461017923 
-2019-10-02 11:18:52.738745-concatinating images for  call of account no 1083461017923 
-2019-10-02 11:18:52.822704-concatinating images for call of account no 1083461017923 
-2019-10-02 11:18:52.909649-saving joined image of of account no 1083461017923 and saving the path to an array 
-2019-10-02 11:18:53.258793-saving all the collected information to a pandas dataframe 
-2019-10-02 11:18:54.728226-going to aml checking page 
-2019-10-02 11:18:57.556653-going to aml checking page for account no 1083441036686 and getting the aml status
-2019-10-02 11:19:00.339951-going to aml checking page for account no 1083441036681 and getting the aml status
-2019-10-02 11:19:03.183197-going to aml checking page for account no 1083441036703 and getting the aml status
-2019-10-02 11:19:06.077965-going to aml checking page for account no 1083448112646 and getting the aml status
-2019-10-02 11:19:08.891573-going to aml checking page for account no 1083493011265 and getting the aml status
-2019-10-02 11:19:11.699345-going to aml checking page for account no 1083493011262 and getting the aml status
-2019-10-02 11:19:14.408969-going to aml checking page for account no 1083494001542 and getting the aml status
-2019-10-02 11:19:17.170834-going to aml checking page for account no 1083494001539 and getting the aml status
-2019-10-02 11:19:19.997309-going to aml checking page for account no 1083493011260 and getting the aml status
-2019-10-02 11:19:22.756182-going to aml checking page for account no 1083419041164 and getting the aml status
-2019-10-02 11:19:26.568905-going to aml checking page for account no 1083410035909 and getting the aml status
-2019-10-02 11:19:29.420548-going to aml checking page for account no 1083467006866 and getting the aml status
-2019-10-02 11:19:32.171908-going to aml checking page for account no 1083461017923 and getting the aml status
-2019-10-02 11:19:32.255572-saving all the aml status to the dataframe
-2019-10-02 11:19:32.333060-doing the name check for all the entries
-2019-10-02 11:19:32.415678-name check done
-2019-10-02 11:19:32.554002-doing  face comparion ofr the entries
-2019-10-02 11:19:36.768337-done face compation for account no 1083441036686
-2019-10-02 11:19:41.158544-done face compation for account no 1083441036681
-2019-10-02 11:19:42.993368-done face compation for account no 1083441036703
-2019-10-02 11:19:44.713038-done face compation for account no 1083448112646
-2019-10-02 11:19:48.322633-done face compation for account no 1083493011265
-2019-10-02 11:19:51.919727-done face compation for account no 1083493011262
-2019-10-02 11:19:53.449468-done face compation for account no 1083494001542
-2019-10-02 11:19:55.092408-done face compation for account no 1083494001539
-2019-10-02 11:19:58.698255-done face compation for account no 1083493011260
-2019-10-02 11:20:00.389068-done face compation for account no 1083419041164
-2019-10-02 11:20:03.607291-done face compation for account no 1083410035909
-2019-10-02 11:20:07.312453-done face compation for account no 1083467006866
-2019-10-02 11:20:08.163914-done face compation for account no 1083461017923
-2019-10-02 11:20:08.246107-compared faces and saved resuts to the dataframe
-2019-10-02 11:20:08.327832-started nominee gender check using facial analysis
-2019-10-02 11:20:09.378684-done gender check for account no 1083441036686
-2019-10-02 11:20:09.456353-doing nominee relation check for account no 1083441036686
-2019-10-02 11:20:10.956196-done gender check for account no 1083441036681
-2019-10-02 11:20:12.054977-doing nominee relation check for account no 1083441036681
-2019-10-02 11:20:12.616191-done gender check for account no 1083441036703
-2019-10-02 11:20:12.693950-doing nominee relation check for account no 1083441036703
-2019-10-02 11:20:13.398289-done gender check for account no 1083448112646
-2019-10-02 11:20:13.480050-doing nominee relation check for account no 1083448112646
-2019-10-02 11:20:14.310917-done gender check for account no 1083493011265
-2019-10-02 11:20:14.394110-doing nominee relation check for account no 1083493011265
-2019-10-02 11:20:15.061805-done gender check for account no 1083493011262
-2019-10-02 11:20:15.147165-doing nominee relation check for account no 1083493011262
-2019-10-02 11:20:15.798673-done gender check for account no 1083494001542
-2019-10-02 11:20:15.880630-doing nominee relation check for account no 1083494001542
-2019-10-02 11:20:16.487044-done gender check for account no 1083494001539
-2019-10-02 11:20:16.570657-doing nominee relation check for account no 1083494001539
-2019-10-02 11:20:17.265942-done gender check for account no 1083493011260
-2019-10-02 11:20:17.343340-doing nominee relation check for account no 1083493011260
-2019-10-02 11:20:18.236341-done gender check for account no 1083419041164
-2019-10-02 11:20:18.320585-doing nominee relation check for account no 1083419041164
-2019-10-02 11:20:19.250160-done gender check for account no 1083410035909
-2019-10-02 11:20:19.328594-doing nominee relation check for account no 1083410035909
-2019-10-02 11:20:20.068530-done gender check for account no 1083467006866
-2019-10-02 11:20:20.146705-doing nominee relation check for account no 1083467006866
-2019-10-02 11:20:21.232080-done gender check for account no 1083461017923
-2019-10-02 11:20:21.309808-doing nominee relation check for account no 1083461017923
-2019-10-02 11:20:21.399190-done nominee check 
-2019-10-02 11:20:21.483524-doing the sbs code check for account no 1083441036686
-2019-10-02 11:20:21.565652-doing the sbs code check for account no 1083441036681
-2019-10-02 11:20:21.644677-doing the sbs code check for account no 1083441036703
-2019-10-02 11:20:21.727566-doing the sbs code check for account no 1083448112646
-2019-10-02 11:20:21.805792-doing the sbs code check for account no 1083493011265
-2019-10-02 11:20:21.888792-doing the sbs code check for account no 1083493011262
-2019-10-02 11:20:21.970026-change in sbs code detected for account no 1083493011262
-2019-10-02 11:20:22.558619-doing the sbs code check for account no 1083494001542
-2019-10-02 11:20:22.636662-doing the sbs code check for account no 1083494001539
-2019-10-02 11:20:22.720388-doing the sbs code check for account no 1083493011260
-2019-10-02 11:20:22.803563-doing the sbs code check for account no 1083419041164
-2019-10-02 11:20:22.885897-doing the sbs code check for account no 1083410035909
-2019-10-02 11:20:22.964051-change in sbs code detected for account no 1083410035909
-2019-10-02 11:20:23.519446-doing the sbs code check for account no 1083467006866
-2019-10-02 11:20:23.601816-doing the sbs code check for account no 1083461017923
-2019-10-02 11:20:23.680104-change in sbs code detected for account no 1083461017923
-2019-10-02 11:20:24.177142-done sbs check and added to data frame
-2019-10-02 11:20:24.259699-started signature check for the sign card
-2019-10-02 11:20:24.416819-done signature check for account no1083441036686
-2019-10-02 11:20:24.569074-done signature check for account no1083441036681
-2019-10-02 11:20:24.688860-done signature check for account no1083441036703
-2019-10-02 11:20:24.797808-done signature check for account no1083448112646
-2019-10-02 11:20:24.930636-done signature check for account no1083493011265
-2019-10-02 11:20:25.085874-done signature check for account no1083493011262
-2019-10-02 11:20:25.201708-done signature check for account no1083494001542
-2019-10-02 11:20:25.301375-done signature check for account no1083494001539
-2019-10-02 11:20:25.436463-done signature check for account no1083493011260
-2019-10-02 11:20:25.566231-done signature check for account no1083419041164
-2019-10-02 11:20:25.695807-done signature check for account no1083410035909
-2019-10-02 11:20:25.847066-done signature check for account no1083467006866
-2019-10-02 11:20:25.940910-done signature check for account no1083461017923
-2019-10-02 11:20:26.026279-done all signature check
-2019-10-02 11:20:26.110604-saving data from the data frame  to a csv file
-2019-10-02 11:20:56.956347-going to the nid website
-2019-10-02 11:20:57.880485-logging in to nid website
-2019-10-02 11:20:57.968154-doing nid check for account no 1083441036686
-2019-10-02 11:21:08.943031-done nid check and saved nid image of account no 1083441036686
-2019-10-02 11:21:09.027288-doing nid check for account no 1083441036681
-2019-10-02 11:21:17.286326-done nid check and saved nid image of account no 1083441036681
-2019-10-02 11:21:17.369559-doing nid check for account no 1083441036703
-2019-10-02 11:21:21.946507-done nid check and saved nid image of account no 1083441036703
-2019-10-02 11:21:22.028786-doing nid check for account no 1083448112646
-2019-10-02 11:21:28.382149-done nid check and saved nid image of account no 1083448112646
-2019-10-02 11:21:28.460645-doing nid check for account no 1083493011265
-2019-10-02 11:21:36.922835-done nid check and saved nid image of account no 1083493011265
-2019-10-02 11:21:37.006270-doing nid check for account no 1083493011262
-2019-10-02 11:21:42.217505-done nid check and saved nid image of account no 1083493011262
-2019-10-02 11:21:42.299750-doing nid check for account no 1083494001542
-2019-10-02 11:21:45.158411-done nid check and saved nid image of account no 1083494001542
-2019-10-02 11:21:45.240735-doing nid check for account no 1083494001539
-2019-10-02 11:21:46.860775-done nid check and saved nid image of account no 1083494001539
-2019-10-02 11:21:46.941556-doing nid check for account no 1083493011260
-2019-10-02 11:21:47.378754-tried nid chck for account no 1083493011260 and found error
-2019-10-02 11:21:47.461271-doing nid check for account no 1083419041164
-2019-10-02 11:21:51.663202-done nid check and saved nid image of account no 1083419041164
-2019-10-02 11:21:51.796323-doing nid check for account no 1083410035909
-2019-10-02 11:21:55.380477-done nid check and saved nid image of account no 1083410035909
-2019-10-02 11:21:55.462988-doing nid check for account no 1083467006866
-2019-10-02 11:22:00.509672-done nid check and saved nid image of account no 1083467006866
-2019-10-02 11:22:00.591110-doing nid check for account no 1083461017923
-2019-10-02 11:22:05.663313-done nid check and saved nid image of account no 1083461017923
-2019-10-02 11:22:05.756684-done nid check saved it into a csv
-2019-10-02 11:22:12.806950-done comparing address and name from NID and erp and saved to a it to a CSV
-2019-10-02 11:22:12.905884-making a final CSV of all the checks
-2019-10-02 11:22:12.988161-started final verification
-2019-10-02 11:22:41.531630-Done final verification
+2019-10-02 14:01:04.491562-logged in to erp system
+2019-10-02 14:01:04.934447-verification list page empty or no urls found
+2019-10-02 14:01:05.091148-taking the urls of all entries from verification list page
+2019-10-02 14:01:05.189615-verification list page empty or no urls found
+2019-10-02 14:01:05.331900-taking the urls of all entries from verification list page
+2019-10-02 14:01:05.474249-taking the urls of all entries from verification list page
+2019-10-02 14:01:05.620065-taking the urls of all entries from verification list page
+2019-10-02 14:01:05.762642-taking the urls of all entries from verification list page
+2019-10-02 14:01:05.902260-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.040786-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.179161-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.275193-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.420884-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.565100-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.701407-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.837084-taking the urls of all entries from verification list page
+2019-10-02 14:01:06.979075-taking the urls of all entries from verification list page
+2019-10-02 14:01:07.121017-taking the urls of all entries from verification list page
+2019-10-02 14:01:08.261916-taking the urls of all entries from verification list page
+2019-10-02 14:01:08.359905-taking the urls of all entries from verification list page
+2019-10-02 14:01:08.502554-taking the urls of all entries from verification list page
+2019-10-02 14:01:08.644139-taking the urls of all entries from verification list page
+2019-10-02 14:01:08.746620-taking the urls of all entries from verification list page
+2019-10-02 14:01:08.879436-verification list page empty or no urls found
+2019-10-02 14:01:09.016161-verification list page empty or no urls found
+2019-10-02 14:01:09.176039-traversing the links collected from 
+2019-10-02 14:01:09.522709-going tohttp://localhost/1.html
+2019-10-02 14:01:10.472391-collected all text data from account number 1083441036686 verification detail page
+2019-10-02 14:01:10.708024-getting required images from account no -1083441036686 
+2019-10-02 14:01:10.789799-concatinating images for  call of account no 1083441036686 
+2019-10-02 14:01:10.890785-concatinating images for call of account no 1083441036686 
+2019-10-02 14:01:11.029611-saving joined image of of account no 1083441036686 and saving the path to an array 
+2019-10-02 14:01:11.515971-going tohttp://localhost/2.html
+2019-10-02 14:01:12.577724-collected all text data from account number 1083441036681 verification detail page
+2019-10-02 14:01:12.941886-getting required images from account no -1083441036681 
+2019-10-02 14:01:13.021986-concatinating images for  call of account no 1083441036681 
+2019-10-02 14:01:13.109679-concatinating images for call of account no 1083441036681 
+2019-10-02 14:01:13.246910-saving joined image of of account no 1083441036681 and saving the path to an array 
+2019-10-02 14:01:13.736395-going tohttp://localhost/3.html
+2019-10-02 14:01:14.676628-collected all text data from account number 1083441036703 verification detail page
+2019-10-02 14:01:14.878619-getting required images from account no -1083441036703 
+2019-10-02 14:01:14.955794-concatinating images for  call of account no 1083441036703 
+2019-10-02 14:01:15.043067-concatinating images for call of account no 1083441036703 
+2019-10-02 14:01:15.160017-saving joined image of of account no 1083441036703 and saving the path to an array 
+2019-10-02 14:01:15.593799-going tohttp://localhost/4.html
+2019-10-02 14:01:16.573727-collected all text data from account number 1083448112646 verification detail page
+2019-10-02 14:01:16.716550-getting required images from account no -1083448112646 
+2019-10-02 14:01:16.799092-concatinating images for  call of account no 1083448112646 
+2019-10-02 14:01:16.887090-concatinating images for call of account no 1083448112646 
+2019-10-02 14:01:17.007715-saving joined image of of account no 1083448112646 and saving the path to an array 
+2019-10-02 14:01:17.467466-going tohttp://localhost/5.html
+2019-10-02 14:01:18.237065-collected all text data from account number 1083493011265 verification detail page
+2019-10-02 14:01:18.557894-getting required images from account no -1083493011265 
+2019-10-02 14:01:18.636169-concatinating images for  call of account no 1083493011265 
+2019-10-02 14:01:18.729512-concatinating images for call of account no 1083493011265 
+2019-10-02 14:01:18.866490-saving joined image of of account no 1083493011265 and saving the path to an array 
+2019-10-02 14:01:19.348013-going tohttp://localhost/6.html
+2019-10-02 14:01:20.177434-collected all text data from account number 1083493011262 verification detail page
+2019-10-02 14:01:20.539863-getting required images from account no -1083493011262 
+2019-10-02 14:01:20.622587-concatinating images for  call of account no 1083493011262 
+2019-10-02 14:01:20.720279-concatinating images for call of account no 1083493011262 
+2019-10-02 14:01:20.909595-saving joined image of of account no 1083493011262 and saving the path to an array 
+2019-10-02 14:01:21.452430-going tohttp://localhost/10.html
+2019-10-02 14:01:22.235903-collected all text data from account number 1083494001542 verification detail page
+2019-10-02 14:01:22.419111-getting required images from account no -1083494001542 
+2019-10-02 14:01:22.502666-concatinating images for  call of account no 1083494001542 
+2019-10-02 14:01:22.594490-concatinating images for call of account no 1083494001542 
+2019-10-02 14:01:22.702373-saving joined image of of account no 1083494001542 and saving the path to an array 
+2019-10-02 14:01:23.143202-going tohttp://localhost/11.html
+2019-10-02 14:01:23.991036-collected all text data from account number 1083494001539 verification detail page
+2019-10-02 14:01:24.305802-getting required images from account no -1083494001539 
+2019-10-02 14:01:24.389396-concatinating images for  call of account no 1083494001539 
+2019-10-02 14:01:24.480530-concatinating images for call of account no 1083494001539 
+2019-10-02 14:01:24.587723-saving joined image of of account no 1083494001539 and saving the path to an array 
+2019-10-02 14:01:25.025142-going tohttp://localhost/13.html
+2019-10-02 14:01:25.781916-collected all text data from account number 1083493011260 verification detail page
+2019-10-02 14:01:26.100138-getting required images from account no -1083493011260 
+2019-10-02 14:01:26.181631-concatinating images for  call of account no 1083493011260 
+2019-10-02 14:01:26.291966-concatinating images for call of account no 1083493011260 
+2019-10-02 14:01:26.459628-saving joined image of of account no 1083493011260 and saving the path to an array 
+2019-10-02 14:01:26.980373-going tohttp://localhost/15.html
+2019-10-02 14:01:28.763386-collected all text data from account number 1083419041164 verification detail page
+2019-10-02 14:01:29.089989-getting required images from account no -1083419041164 
+2019-10-02 14:01:29.172097-concatinating images for  call of account no 1083419041164 
+2019-10-02 14:01:29.259589-concatinating images for call of account no 1083419041164 
+2019-10-02 14:01:29.382463-saving joined image of of account no 1083419041164 and saving the path to an array 
+2019-10-02 14:01:30.648890-going tohttp://localhost/16.html
+2019-10-02 14:01:31.594184-collected all text data from account number 1083410035909 verification detail page
+2019-10-02 14:01:31.926209-getting required images from account no -1083410035909 
+2019-10-02 14:01:32.003876-concatinating images for  call of account no 1083410035909 
+2019-10-02 14:01:32.092334-concatinating images for call of account no 1083410035909 
+2019-10-02 14:01:32.220401-saving joined image of of account no 1083410035909 and saving the path to an array 
+2019-10-02 14:01:33.181336-going tohttp://localhost/17.html
+2019-10-02 14:01:33.986326-collected all text data from account number 1083467006866 verification detail page
+2019-10-02 14:01:34.280906-getting required images from account no -1083467006866 
+2019-10-02 14:01:34.362009-concatinating images for  call of account no 1083467006866 
+2019-10-02 14:01:34.447043-concatinating images for call of account no 1083467006866 
+2019-10-02 14:01:34.593042-saving joined image of of account no 1083467006866 and saving the path to an array 
+2019-10-02 14:01:35.272721-going tohttp://localhost/18.html
+2019-10-02 14:01:36.074325-collected all text data from account number 1083461017923 verification detail page
+2019-10-02 14:01:36.365320-getting required images from account no -1083461017923 
+2019-10-02 14:01:36.446570-concatinating images for  call of account no 1083461017923 
+2019-10-02 14:01:36.529086-concatinating images for call of account no 1083461017923 
+2019-10-02 14:01:36.611160-saving joined image of of account no 1083461017923 and saving the path to an array 
+2019-10-02 14:01:37.915560-saving all the collected information to a pandas dataframe 
+2019-10-02 14:01:39.967745-going to aml checking page 
+2019-10-02 14:01:42.847630-going to aml checking page for account no 1083441036686 and getting the aml status
+2019-10-02 14:01:45.614664-going to aml checking page for account no 1083441036681 and getting the aml status
+2019-10-02 14:01:48.484382-going to aml checking page for account no 1083441036703 and getting the aml status
+2019-10-02 14:01:52.255354-going to aml checking page for account no 1083448112646 and getting the aml status
+2019-10-02 14:01:55.024065-going to aml checking page for account no 1083493011265 and getting the aml status
+2019-10-02 14:01:57.799567-going to aml checking page for account no 1083493011262 and getting the aml status
+2019-10-02 14:02:00.711209-going to aml checking page for account no 1083494001542 and getting the aml status
+2019-10-02 14:02:03.528149-going to aml checking page for account no 1083494001539 and getting the aml status
+2019-10-02 14:02:06.291090-going to aml checking page for account no 1083493011260 and getting the aml status
+2019-10-02 14:02:09.160834-going to aml checking page for account no 1083419041164 and getting the aml status
+2019-10-02 14:02:12.009096-going to aml checking page for account no 1083410035909 and getting the aml status
+2019-10-02 14:02:14.748308-going to aml checking page for account no 1083467006866 and getting the aml status
+2019-10-02 14:02:17.622643-going to aml checking page for account no 1083461017923 and getting the aml status
+2019-10-02 14:02:17.707831-saving all the aml status to the dataframe
+2019-10-02 14:02:17.786939-doing the name check for all the entries
+2019-10-02 14:02:17.875778-name check done
+2019-10-02 14:02:18.015420-doing  face comparion ofr the entries
+2019-10-02 14:02:22.316823-done face compation for account no 1083441036686
+2019-10-02 14:02:25.380288-done face compation for account no 1083441036681
+2019-10-02 14:02:27.234767-done face compation for account no 1083441036703
+2019-10-02 14:02:29.295560-done face compation for account no 1083448112646
+2019-10-02 14:02:33.058729-done face compation for account no 1083493011265
+2019-10-02 14:02:38.544898-done face compation for account no 1083493011262
+2019-10-02 14:02:40.496485-done face compation for account no 1083494001542
+2019-10-02 14:02:42.565211-done face compation for account no 1083494001539
+2019-10-02 14:02:50.548455-done face compation for account no 1083493011260
+2019-10-02 14:02:52.540626-done face compation for account no 1083419041164
+2019-10-02 14:02:55.931050-done face compation for account no 1083410035909
+2019-10-02 14:03:00.025367-done face compation for account no 1083467006866
+2019-10-02 14:03:00.812009-done face compation for account no 1083461017923
+2019-10-02 14:03:00.915082-compared faces and saved resuts to the dataframe
+2019-10-02 14:03:01.017172-started nominee gender check using facial analysis
+2019-10-02 14:03:02.108202-done gender check for account no 1083441036686
+2019-10-02 14:03:02.190070-doing nominee relation check for account no 1083441036686
+2019-10-02 14:03:03.606897-done gender check for account no 1083441036681
+2019-10-02 14:03:03.690574-doing nominee relation check for account no 1083441036681
+2019-10-02 14:03:04.704062-done gender check for account no 1083441036703
+2019-10-02 14:03:04.782478-doing nominee relation check for account no 1083441036703
+2019-10-02 14:03:05.816122-done gender check for account no 1083448112646
+2019-10-02 14:03:05.894294-doing nominee relation check for account no 1083448112646
+2019-10-02 14:03:07.067505-done gender check for account no 1083493011265
+2019-10-02 14:03:07.150974-doing nominee relation check for account no 1083493011265
+2019-10-02 14:03:07.848738-done gender check for account no 1083493011262
+2019-10-02 14:03:07.930933-doing nominee relation check for account no 1083493011262
+2019-10-02 14:03:08.511846-done gender check for account no 1083494001542
+2019-10-02 14:03:08.594953-doing nominee relation check for account no 1083494001542
+2019-10-02 14:03:09.431929-done gender check for account no 1083494001539
+2019-10-02 14:03:09.514188-doing nominee relation check for account no 1083494001539
+2019-10-02 14:03:10.210657-done gender check for account no 1083493011260
+2019-10-02 14:03:10.292727-doing nominee relation check for account no 1083493011260
+2019-10-02 14:03:11.203378-done gender check for account no 1083419041164
+2019-10-02 14:03:11.285527-doing nominee relation check for account no 1083419041164
+2019-10-02 14:03:12.682320-done gender check for account no 1083410035909
+2019-10-02 14:03:12.768006-doing nominee relation check for account no 1083410035909
+2019-10-02 14:03:13.371512-done gender check for account no 1083467006866
+2019-10-02 14:03:13.449383-doing nominee relation check for account no 1083467006866
+2019-10-02 14:03:14.799420-done gender check for account no 1083461017923
+2019-10-02 14:03:14.884081-doing nominee relation check for account no 1083461017923
+2019-10-02 14:03:14.974141-done nominee check 
+2019-10-02 14:03:15.055688-doing the sbs code check for account no 1083441036686
+2019-10-02 14:03:15.140211-doing the sbs code check for account no 1083441036681
+2019-10-02 14:03:15.224061-doing the sbs code check for account no 1083441036703
+2019-10-02 14:03:15.302350-doing the sbs code check for account no 1083448112646
+2019-10-02 14:03:15.384966-doing the sbs code check for account no 1083493011265
+2019-10-02 14:03:15.467540-doing the sbs code check for account no 1083493011262
+2019-10-02 14:03:15.546880-change in sbs code detected for account no 1083493011262
+2019-10-02 14:03:16.147673-doing the sbs code check for account no 1083494001542
+2019-10-02 14:03:16.229319-doing the sbs code check for account no 1083494001539
+2019-10-02 14:03:16.311998-doing the sbs code check for account no 1083493011260
+2019-10-02 14:03:16.394593-doing the sbs code check for account no 1083419041164
+2019-10-02 14:03:16.476626-doing the sbs code check for account no 1083410035909
+2019-10-02 14:03:16.558985-change in sbs code detected for account no 1083410035909
+2019-10-02 14:03:17.125125-doing the sbs code check for account no 1083467006866
+2019-10-02 14:03:17.211346-doing the sbs code check for account no 1083461017923
+2019-10-02 14:03:17.293943-change in sbs code detected for account no 1083461017923
+2019-10-02 14:03:17.818815-done sbs check and added to data frame
+2019-10-02 14:03:17.902183-started signature check for the sign card
+2019-10-02 14:03:18.066089-done signature check for account no1083441036686
+2019-10-02 14:03:18.232749-done signature check for account no1083441036681
+2019-10-02 14:03:18.350905-done signature check for account no1083441036703
+2019-10-02 14:03:18.456008-done signature check for account no1083448112646
+2019-10-02 14:03:18.587869-done signature check for account no1083493011265
+2019-10-02 14:03:18.720911-done signature check for account no1083493011262
+2019-10-02 14:03:18.820485-done signature check for account no1083494001542
+2019-10-02 14:03:18.922353-done signature check for account no1083494001539
+2019-10-02 14:03:19.036075-done signature check for account no1083493011260
+2019-10-02 14:03:19.164050-done signature check for account no1083419041164
+2019-10-02 14:03:19.297624-done signature check for account no1083410035909
+2019-10-02 14:03:19.452563-done signature check for account no1083467006866
+2019-10-02 14:03:19.539075-done signature check for account no1083461017923
+2019-10-02 14:03:19.620423-done all signature check
+2019-10-02 14:03:19.706262-saving data from the data frame  to a csv file
+2019-10-02 14:03:41.492127-going to the nid website
+2019-10-02 14:03:42.716341-logging in to nid website
+2019-10-02 14:03:42.801744-doing nid check for account no 1083441036686
+2019-10-02 14:03:55.011884-done nid check and saved nid image of account no 1083441036686
+2019-10-02 14:03:55.093917-doing nid check for account no 1083441036681
+2019-10-02 14:04:04.216999-done nid check and saved nid image of account no 1083441036681
+2019-10-02 14:04:04.294965-doing nid check for account no 1083441036703
+2019-10-02 14:04:10.578259-done nid check and saved nid image of account no 1083441036703
+2019-10-02 14:04:10.658574-doing nid check for account no 1083448112646
+2019-10-02 14:04:17.121542-done nid check and saved nid image of account no 1083448112646
+2019-10-02 14:04:17.199178-doing nid check for account no 1083493011265
+2019-10-02 14:04:28.095180-done nid check and saved nid image of account no 1083493011265
+2019-10-02 14:04:28.173599-doing nid check for account no 1083493011262
+2019-10-02 14:04:34.479179-done nid check and saved nid image of account no 1083493011262
+2019-10-02 14:04:34.561421-doing nid check for account no 1083494001542
+2019-10-02 14:04:36.925244-done nid check and saved nid image of account no 1083494001542
+2019-10-02 14:04:37.007169-doing nid check for account no 1083494001539
+2019-10-02 14:04:39.444754-done nid check and saved nid image of account no 1083494001539
+2019-10-02 14:04:39.526015-doing nid check for account no 1083493011260
+2019-10-02 14:04:40.273029-tried nid chck for account no 1083493011260 and found error
+2019-10-02 14:04:41.378844-doing nid check for account no 1083419041164
+2019-10-02 14:04:45.936718-done nid check and saved nid image of account no 1083419041164
+2019-10-02 14:04:46.014557-doing nid check for account no 1083410035909
+2019-10-02 14:04:49.755926-done nid check and saved nid image of account no 1083410035909
+2019-10-02 14:04:50.858860-doing nid check for account no 1083467006866
+2019-10-02 14:04:57.008643-done nid check and saved nid image of account no 1083467006866
+2019-10-02 14:04:57.090407-doing nid check for account no 1083461017923
+2019-10-02 14:05:02.982997-done nid check and saved nid image of account no 1083461017923
+2019-10-02 14:05:03.075190-done nid check saved it into a csv
+2019-10-02 14:05:10.064395-done comparing address and name from NID and erp and saved to a it to a CSV
+2019-10-02 14:05:10.165746-making a final CSV of all the checks
+2019-10-02 14:05:10.244471-started final verification
+2019-10-02 14:05:39.683483-Done final verification
