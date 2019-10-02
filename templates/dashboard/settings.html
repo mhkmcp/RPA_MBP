@@ -2,106 +2,139 @@
 {% load staticfiles %}
 
 {% block page-content %}
-          <div class="row">
-            <div class="col-12">
-              <nav class="c-tabs"> 
+    <div class="row">
+        <div class="col-12">
+            <nav class="c-tabs">
                 <div class="c-tabs__list nav nav-tabs" id="myTab" role="tablist">
-                  <a class="c-tabs__link active" id="nav-home-tab" data-toggle="tab" href="#nav-nid" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <a class="c-tabs__link active" id="nav-home-tab" data-toggle="tab" href="#nav-nid" role="tab"
+                       aria-controls="nav-home" aria-selected="true">
                     <span class="c-tabs__link-icon">
                       <i class="feather icon-settings"></i>
-                    </span>NID settings 
-                  </a>
-                  <a class="c-tabs__link" id="nav-profile-tab" data-toggle="tab" href="#nav-cbs" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    </span>NID settings
+                    </a>
+                    <a class="c-tabs__link" id="nav-profile-tab" data-toggle="tab" href="#nav-cbs" role="tab"
+                       aria-controls="nav-profile" aria-selected="false">
                     <span class="c-tabs__link-icon">
                       <i class="feather icon-sliders"></i>
                     </span>CBS settings
-                  </a>
-                  <a class="c-tabs__link u-hidden-down@tablet" id="nav-contact-tab" data-toggle="tab" href="#nav-email" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    </a>
+                    <a class="c-tabs__link u-hidden-down@tablet" id="nav-contact-tab" data-toggle="tab"
+                       href="#nav-email" role="tab" aria-controls="nav-contact" aria-selected="false">
                     <span class="c-tabs__link-icon">
                       <i class="feather icon-mail"></i>
                     </span>Reporting Email
-                  </a>                  
+                    </a>
                 </div>
                 <div class="c-tabs__content tab-content" id="nav-tabContent">
-                  <div class="c-tabs__pane active" id="nav-nid" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="row">
-                      <div class="col-xl-4">
-                        <div class="c-field u-mb-medium">
-                          <label class="c-field__label" for="nidURL">Portal URL</label>
-                          <input class="c-input" type="text" id="nidURL">
+                    <div class="c-tabs__pane active" id="nav-nid" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <form method="post" action="/bots/settings/nid/" id="nidSettingsForm">
+                                    {% csrf_token %}
+                                <div class="c-field u-mb-medium">
+                                    <label class="c-field__label" for="nid_url">Portal URL</label>
+                                    <input class="c-input" type="text" id="nid_url" name="nid_url">
+                                </div>
+
+                                <div class="c-field u-mb-medium">
+                                    <label class="c-field__label" for="nid_username">Username</label>
+                                    <input class="c-input" type="text" id="nid_username" name="nid_username">
+                                </div>
+                                <div class="c-field u-mb-medium">
+                                    <label class="c-field__label" for="nid_password">Password</label>
+                                    <input class="c-input" type="password" id="nid_password" name="nid_password">
+                                </div>
+                                </form>
+                            </div>
                         </div>
 
-                        <div class="c-field u-mb-medium">
-                          <label class="c-field__label" for="NIDUsername">Username</label>
-                          <input class="c-input" type="text" id="NIDUsername">
+                        <span class="c-divider u-mv-medium"></span>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-7 col-xl-2 u-mr-auto u-mb-xsmall">
+                                <button class="c-btn c-btn--info c-btn--fullwidth" id="nidSaveButton">Save Settings</button>
+                            </div>
                         </div>
-                        <div class="c-field u-mb-medium">
-                          <label class="c-field__label" for="NIDPassword">Password</label>
-                          <input class="c-input" type="password" id="NIDPassword">
+                    </div>
+                    <div class="c-tabs__pane" id="nav-cbs" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <form method="post" action="/bots/settings/cbs/" id="cbsSettingsForm">
+                                    {% csrf_token %}
+                                <div class="c-field u-mb-medium">
+                                    <label class="c-field__label" for="cbs_url">Portal URL</label>
+                                    <input class="c-input" type="text" id="cbs_url" name="cbs_url">
+                                </div>
+
+                                <div class="c-field u-mb-medium">
+                                    <label class="c-field__label" for="cbs_username">Username</label>
+                                    <input class="c-input" type="text" id="cbs_username" name="cbs_username">
+                                </div>
+                                <div class="c-field u-mb-medium">
+                                    <label class="c-field__label" for="cbs_password">Password</label>
+                                    <input class="c-input" type="password" id="cbs_password" name="cbs_password">
+                                </div>
+                                </form>
+                            </div>
                         </div>
-                      </div>
+
+                        <span class="c-divider u-mv-medium"></span>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-7 col-xl-2 u-mr-auto u-mb-xsmall">
+                                <button class="c-btn c-btn--info c-btn--fullwidth" id="cbsSaveButton">Save Settings</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-tabs__pane" id="nav-email" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="c-field u-mb-medium">
+                                    <form method="post" action="/bots/settings/report-email/" id="emailSettings">
+                                        {% csrf_token %}
+                                        <label class="c-field__label" for="email_config">Reporting Email</label>
+                                        <input class="c-input" type="email" id="email_config" name="email_config">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="c-divider u-mv-medium"></span>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-7 col-xl-2 u-mr-auto u-mb-xsmall">
+                                <button class="c-btn c-btn--info c-btn--fullwidth" id="emailSaveButton">Save Settings
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
-                    <span class="c-divider u-mv-medium"></span>
-
-                    <div class="row">
-                      <div class="col-12 col-sm-7 col-xl-2 u-mr-auto u-mb-xsmall">
-                        <button class="c-btn c-btn--info c-btn--fullwidth">Save Settings</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__pane" id="nav-cbs" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="row">
-                      <div class="col-xl-4">
-                        <div class="c-field u-mb-medium">
-                          <label class="c-field__label" for="CBSURL">Portal URL</label>
-                          <input class="c-input" type="text" id="CBSURL">
-                        </div>
-
-                        <div class="c-field u-mb-medium">
-                          <label class="c-field__label" for="CBSUsername">Username</label>
-                          <input class="c-input" type="text" id="CBSUsername">
-                        </div>
-                        <div class="c-field u-mb-medium">
-                          <label class="c-field__label" for="CBSPassword">Password</label>
-                          <input class="c-input" type="password" id="CBSPassword">
-                        </div>
-                      </div>
-                    </div>
-
-                    <span class="c-divider u-mv-medium"></span>
-
-                    <div class="row">
-                      <div class="col-12 col-sm-7 col-xl-2 u-mr-auto u-mb-xsmall">
-                        <button class="c-btn c-btn--info c-btn--fullwidth">Save Settings</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__pane" id="nav-email" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="row">
-                      <div class="col-xl-4">
-                        <div class="c-field u-mb-medium">
-                          <label class="c-field__label" for="email">Reporting Email</label>
-                          <input class="c-input" type="email" id="email">
-                        </div>
-                      </div>
-                    </div>
-
-                    <span class="c-divider u-mv-medium"></span>
-
-                    <div class="row">
-                      <div class="col-12 col-sm-7 col-xl-2 u-mr-auto u-mb-xsmall">
-                        <button class="c-btn c-btn--info c-btn--fullwidth">Save Settings</button>
-                      </div>
-                    </div>
-                  </div>
-                  
                 </div>
-              </nav>
-            </div>
-          </div>
+            </nav>
+        </div>
+    </div>
 {% endblock %}
 
 
 {% block page-script %}
+    <script>
+
+        $("#emailSaveButton").click(function () {
+            $('#emailSettings').submit();
+        });
+        $("#nidSaveButton").click(function () {
+            $('#nidSettingsForm').submit();
+        });
+        $("#cbsSaveButton").click(function () {
+            $('#cbsSettingsForm').submit();
+        });
+
+
+
+
+    </script>
+
+
+
+
 {% endblock %}

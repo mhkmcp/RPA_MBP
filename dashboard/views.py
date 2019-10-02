@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 
 
 # Create your views here.
+from bots.models import BotConfig
 
 
 def render_landing_page(request):
@@ -21,6 +22,8 @@ def render_landing_page(request):
 def render_settings_page(request):
     page_title = 'Dashboard | FernTech AIW'
     navbar_title = 'Settings'
+    email_config = BotConfig.objects.get(config_validity=True, config_class="email_results")
+
 
     if request.user.is_authenticated:
         return render(request, 'dashboard/settings.html', {
