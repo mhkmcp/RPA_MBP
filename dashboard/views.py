@@ -12,7 +12,6 @@ def render_landing_page(request):
         return render(request, 'dashboard/landing.html', {
             'page_title': page_title,
             'navbar_title': navbar_title,
-
         })
     else:
         return redirect('/login/')
